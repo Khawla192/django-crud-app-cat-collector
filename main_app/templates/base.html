@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="" />
     <title>Cat Collector</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/splash.svg' %}" />
     {% block head %}
     {% endblock %}
 </head>
@@ -15,7 +19,7 @@
     <header>
         <div class="header-logo-container">
             <a href="/">
-                <img src="" alt="The Cat Collector Logo" />
+                <img src="{% static 'images/header-logo.svg' %}" alt="The Cat Collector Logo" />
             </a>
         </div>
         <nav>
